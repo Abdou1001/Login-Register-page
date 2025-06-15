@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+/* variables */
+:root {
+    --main-color : #7494ec;
+    --font-color : #333;
+}
+body{
+    position: relative;
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    height: 100dvb;
+    width: 100dvw;
+}
+
+/* container */
+.container{
+    position: relative;
+    width: 850px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 0 rbga(0, 0, 0, 0,2);
+    overflow: hidden;
+    margin-top: 55px;
+}
+/* form's container */
+.form-box{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    top: 0px; right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    text-align: center;
+    padding: 40px;
+    transition: .6s 1.2s ease-in-out right, 0s 1s visibility;
+    z-index: 1;
+}
+.active .form-box{
+    right: 50%;
+}
+/* register */
+.register{
+    visibility: hidden;
+    text-align: center;
+    direction: rtl;
+    overflow-y: scroll;
+}
+.active .register{
+    visibility: visible;
+}
+.register input{
+    text-align: left;
+}
+.register::-webkit-scrollbar {
+    width: 10px;
+}
+.register::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.register::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+.register::-webkit-scrollbar-thumb:hover {
+    background: #4A90E2;
+}
+
+/* style from */
+form{
+    width: 100%;
+    direction: ltr;
+}
+h1{
+    font-size: 36px;
+    margin: -10px 0px;
+}
+.register h1{
+    margin: 320px 0px 0px;
+}
+/* forms */
+.input-box{
+    position: relative;
+    margin: 30px 0px;
+}
+.input-box input{
+    width: 100%;
+    padding: 13px 50px 13px 20px; 
+    background-color: #eee;
+    border-radius: 8px;
+    font: 16px;
+    font: var(--font-color);
+    font-weight: 500;
+}
+.input-box input::placeholder{
+    font-weight: 400;
+    color: #888;
+}
+/* icon */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+/* remember */
+.input-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    font-size: 17px;
+}
+#remember {
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+/* forgot */
+.forgot-password{
+    margin: -15px 0 15px;
+}
+.forgot-password a{
+    font: 15px;
+    color: var(--font-color);
+    transition: .3s;
+}
+.forgot-password a:hover{
+    color: #111;
+}
+/* gendeer */
+.inputs{
+    margin: 20px 0px;
+    font-size: 17px;
+    direction: ltr;
+}
+.gender .gen{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.gender .gen label{
+    cursor: pointer;
+}
+.gender input{
+    cursor: pointer;
+    margin: 0px 3px;
+}
+/* country */
+.country select{
+    background-color: var(--main-color);
+    padding: 5px 7px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.country option{
+    font-weight: 500;
+}
+/* date */
+.date #date{
+    margin: 0px 10px;
+    background-color: var(--main-color);
+    padding: 5px 7px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 900;
+}
+.date #date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.date #date::-moz-calendar-picker-indicator {
+    display: none;
+}
+
+/* agree & policy */
+.agree, .policy{
+    text-align: left;
+}
+.inputs input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inputs #agree,
+.inputs #policy {
+    margin: 0px 20px 0 40px;
+}
+
+
+/* botton style */
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.3);
+    font-weight: 600;
+    transition: .3s;
+}
+.btn:hover{
+    background: #5f7eb0;
+}
+.container p {
+    font-size: 15px;
+    margin: 20px 0px;
+}
+.platforms a{
+    color: var(--font-color);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    margin: 0px 8px;
+    transition: .3s;
+}
+.platforms a:hover{
+    color: black;
+}
+/* toggle box text */
+.toggle-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.toggle-box::before{
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -250%;
+    background-color: var(--main-color);
+    border-radius: 150px;
+    z-index: 2;
+    transition: 1.8s ease-in-out;
+}
+.active .toggle-box::before{
+    left: 50%;
+}
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+    transition: .6s ease-in-out right, .6s ease-in-out left;
+}
+/* left */
+.toggle-left{
+    left: 0%;
+    transition-delay: 1.2s;
+}
+.active .toggle-left{
+    left: -50%;
+    transition-delay: .6s;
+}
+/* right */
+.toggle-right{
+    right: -50%;
+    transition-delay: .6s;
+}
+.active .toggle-right{
+    right: 0%;
+    transition-delay: 1.2s;
+}
+/* toggle content */
+.toggle-panel p{
+    margin-bottom: 20px;
+}
+.toggle-panel .btn{
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+    transition: .4s;
+}
+.toggle-panel .btn:hover{
+    background-color: white;
+    border: 2px solid #fff;
+    color: var(--main-color);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login and Registration">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Login and Registration">
+    <!-- img the web -->
+    <link rel="icon" type="image/png" href="img/logo-Dhoom-01.png">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <title>Login and Registration</title>
+</head>
+
+<body>
+    <!-- End Header -->
+    <!-- container for login page -->
+    <div class="container" id="container">
+        <!-- Login side -->
+        <div class="form-box login">
+            <form action="" method="post" autocomplete="on">
+                <h1>Login</h1>
+                <!-- Username input -->
+                <div class="input-box">
+                    <input type="text" name="userName" id="userNmae" required autocomplete="name" placeholder="Enter Username or Email" title="Username or Gmail" autofocus>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <!-- Password input -->
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required placeholder="Enter Password" minlength="6" maxlength="20" title="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <!-- forgot-password link -->
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <!-- remember me checkbox -->
+                <div class="input-checkbox">
+                    <input type="checkbox" id="remember" name="remember" checked>
+                    <label for="remember">Remember me</label>
+                </div>
+                <!-- submit button -->
+                <button class="btn" type="submit">Login</button>
+                <p>Login with social platforms</p>
+                <div class="platforms">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </form>
+        </div>
+        <!-- Register side -->
+        <div class="form-box register">
+            <form action="index.html" method="post" autocomplete="on">
+                <h1>Register</h1>
+                <!-- Username input -->
+                <div class="input-box">
+                    <input type="text" name="userName" id="userNmae-register" required autocomplete="name" placeholder="Enter Username" autofocus title="Username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <!-- Email input -->
+                <div class="input-box">
+                    <input type="email" name="email" id="email-register" required autocomplete="email" placeholder="Enter Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <!-- Password input -->
+                <div class="input-box">
+                    <input type="password" name="password" id="password-register" required placeholder="Enter Password" minlength="6" maxlength="20" title="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <!-- Phone input -->
+                <div class="input-box">
+                    <input type="tel" name="number" id="number-register" required autocomplete="tel" placeholder="Enter Phone Number" minlength="6" maxlength="20" title="Phone Number">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <!-- Gender radio -->
+                <div class="gender inputs">
+                    <div class="male gen">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" checked>
+                    </div>
+                    <div class="female gen">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender">
+                    </div>
+                </div>
+                <!-- Nationality select -->
+                <div class="country inputs">
+                    <label for="nationality">Your Nationality:</label>
+                    <select name="nationality" id="nationality">
+                        <option value="Yemeni" selected>Yemeni</option>
+                        <option value="Omani">Omani</option>
+                        <option value="Saudi">Saudi</option>
+                    </select>
+                </div>
+                <!-- Birthday input -->
+                <div class="date inputs">
+                    <label for="date">Your Birthday:</label>
+                    <input type="date" name="date" id="date" max="2005-12-31" value="2005-12-31" required>
+                </div>
+                <div class="agree inputs">
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">I agree</label>
+                    <br>
+                </div>
+                <div class="policy inputs">
+                    <input type="checkbox" name="policy" id="policy" required>
+                    <label for="policy">privacy policy</label>
+                </div>
+                <!-- Submit button -->
+                <button class="btn" type="submit">Register</button>
+                <p>register with social platforms</p>
+                <div class="platforms">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </form>
+        </div>
+        <!-- toggle page -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn" id="register-btn">Register</button>
+            </div>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn" id="login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
